@@ -17,6 +17,7 @@ const replaceScriptName = "temporal.docbuilder";
 
 (async function () {
     try {
+        console.log("Hora inicio: "+new Date().toString())
       // LEER ARCHIVO DE TEMPLATE DE CREAR CSV Y CREAR SCRIPT
       let createCsvScriptContent = fs.readFileSync(createCvsTemplatePath, 'utf8');
       createCsvScriptContent = createCsvScriptContent.replaceAll("{{dataBasePath}}", dataBasePath);
@@ -61,6 +62,8 @@ const replaceScriptName = "temporal.docbuilder";
         await execPromise(commandToPdf);
         console.log(textoTemporal)
     }) */
+        console.log("Hora inicio creaciones pdf: "+new Date().toString())
+
         for (const rowObject of csvData.data) {
             var textoTemporal = createPdfScriptContent;
             for (key in rowObject) {
@@ -76,6 +79,7 @@ const replaceScriptName = "temporal.docbuilder";
             await execPromise(commandToPdf);
            // console.log(textoTemporal);
           }
+          console.log("Hora finalizacion: "+new Date().toString())
     } catch (err) {
       console.error(err);
     }

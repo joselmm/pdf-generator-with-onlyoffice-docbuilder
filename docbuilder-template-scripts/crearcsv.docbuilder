@@ -1,0 +1,4 @@
+builder.OpenFile("{{dataBasePath}}");
+var oDocument = Api.GetSheet("{{sheetName}}");
+console.log("wow")
+builder.SaveFile("csv", "{{csvPathName}}");

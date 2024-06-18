@@ -1,0 +1,8 @@
+builder.OpenFile("C:\Users\SORACA\Desktop\duro\develop\pdf-generator-with-onlyoffice-docbuilder\databasesandtemplate\Carta ejemplo.docx");
+var oDocument = Api.GetDocument();
+oDocument.SearchAndReplace({searchString:"@Nombre@",replaceString:"José"})
+oDocument.SearchAndReplace({searchString:"@Apellido@",replaceString:"Soracá"})
+oDocument.SearchAndReplace({searchString:"@Direccion@",replaceString:"Alfredo De La Peña, Cra 7 Cl 15#45"})
+oDocument.SearchAndReplace({searchString:"@Correo@",replaceString:"josealfredosoraca@gmail.com"})
+
+builder.SaveFile("pdf", "C:\Users\SORACA\Desktop\duro\develop\pdf-generator-with-onlyoffice-docbuilder\generated-pdfs\José.pdf");

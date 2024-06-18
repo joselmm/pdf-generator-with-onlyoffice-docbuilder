@@ -1,0 +1,4 @@
+builder.OpenFile("{{pathToDocxTemplate}}");
+var oDocument = Api.GetDocument();
+****
+builder.SaveFile("pdf", "{{pathToPdfs}}");

@@ -1,7 +1,9 @@
-﻿Nombre,Apellido,Direccion,Correo
-Sofía,García,"Calle de la Paz 12, 28004 Madrid",sofia@gmail.com
-Juan,Pérez,"Avenida de la Libertad 56, 41001 Sevilla",juan@gmail.com
-María,Rodríguez,"Calle de la Luna 8, 50001 Zaragoza",maria@gmail.com
-Ana,Sánchez,"Plaza de España 3, 33001 Oviedo",ana@gmail.com
-Carlos,Martínez,"Calle de la Victoria 21, 18001 Granada",carlos@gmail.com
-José,Soracá,"Alfredo De La Peña, Cra 7 Cl 15#45",josealfredosoraca@gmail.com
+﻿Nombre,Apellido,Direccion,Correo,DNI
+Sofía,García,"Calle de la Paz 12, 28004 Madrid",sofia@gmail.com,86484
+Juan,Pérez,"Avenida de la Libertad 56, 41001 Sevilla",juan@gmail.com,5455575
+María,Rodríguez,"Calle de la Luna 8, 50001 Zaragoza",maria@gmail.com,21586574847
+Ana,Sánchez,"Plaza de España 3, 33001 Oviedo",ana@gmail.com,21554796941
+Carlos,Martínez,"Calle de la Victoria 21, 18001 Granada",carlos@gmail.com,56798564124
+José,Soracá,"Alfredo De La Peña, Cra 7 Cl 15#45",josealfredosoraca@gmail.com,5214856545
+Lina,Mancer,Barrio Centro,lianadfdfsgdf@gmail.com,158257964
+Pedro,Sanchez,Otra dir,Pedro@gmail.com,54527415

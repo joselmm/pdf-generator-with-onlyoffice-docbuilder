@@ -74,7 +74,7 @@ const replaceScriptName = "temporal.docbuilder";
             const commandToPdf = `"${docbuilderBinaryPath}" "${docbuilderScriptsPath + replaceScriptName}"`;
             const execPromise = util.promisify(childProcess.exec);
             await execPromise(commandToPdf);
-            console.log(textoTemporal);
+           // console.log(textoTemporal);
           }
     } catch (err) {
       console.error(err);

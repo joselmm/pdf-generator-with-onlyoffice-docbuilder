@@ -1,0 +1,7 @@
+builder.OpenFile("C:\Users\SORACA\Desktop\Plantilla Diploma - Pt 3.4 Guia 14 - para combinar.docx");
+var oDocument = Api.GetDocument();
+oDocument.SearchAndReplace({searchString:"@Nombre Completo@",replaceString:"José Manuel Hernández Díaz"})
+oDocument.SearchAndReplace({searchString:"@Título@",replaceString:"Licenciado en Administración de Empresas"})
+oDocument.SearchAndReplace({searchString:"@Cédula@",replaceString:"12345675"})
+
+builder.SaveFile("pdf", "C:\Users\SORACA\Desktop\duro\develop\pdf-generator-with-onlyoffice-docbuilder\generated-pdfs\12345675.pdf");

@@ -1,0 +1,7 @@
+builder.OpenFile("C:\Users\SORACA\Desktop\Plantilla Diploma - Pt 3.4 Guia 14 - para combinar.docx");
+var oDocument = Api.GetDocument();
+oDocument.SearchAndReplace({searchString:"@Nombre Completo@",replaceString:"Luis Fernando Gutiérrez Moreno"})
+oDocument.SearchAndReplace({searchString:"@Título@",replaceString:"Ingeniero en Electrónica"})
+oDocument.SearchAndReplace({searchString:"@Cédula@",replaceString:"67890123"})
+
+builder.SaveFile("pdf", "C:\Users\SORACA\Desktop\duro\develop\pdf-generator-with-onlyoffice-docbuilder\generated-pdfs\67890123.pdf");

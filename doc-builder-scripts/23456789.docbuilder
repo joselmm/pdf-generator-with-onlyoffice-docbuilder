@@ -1,0 +1,7 @@
+builder.OpenFile("C:\Users\SORACA\Desktop\Plantilla Diploma - Pt 3.4 Guia 14 - para combinar.docx");
+var oDocument = Api.GetDocument();
+oDocument.SearchAndReplace({searchString:"@Nombre Completo@",replaceString:"Juan Carlos Pérez Rodríguez"})
+oDocument.SearchAndReplace({searchString:"@Título@",replaceString:"Licenciado en Economía"})
+oDocument.SearchAndReplace({searchString:"@Cédula@",replaceString:"23456789"})
+
+builder.SaveFile("pdf", "C:\Users\SORACA\Desktop\duro\develop\pdf-generator-with-onlyoffice-docbuilder\generated-pdfs\23456789.pdf");

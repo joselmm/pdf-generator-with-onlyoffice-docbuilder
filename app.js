@@ -84,10 +84,11 @@ const concurrencia = 10;
             await execPromise(commandToPdf); */
             object.comando=commandToPdf;
             object.scriptPath=scriptPath;
+            object.nombre=rowObject.Nombre;
            // console.log(textoTemporal);
            ordenes.push(object);
           }
-          /* console.log(ordenes) */
+         // console.log(ordenes)
 
           /* for (let i = 0; i < ordenes.length; i++) {
             const object = ordenes[i];
@@ -96,8 +97,9 @@ const concurrencia = 10;
             console.log(new Date().toString()+" - finalizo "+object.scriptPath)
             
           } */
-
+          
         const queue = async.queue(function(task, callback) {
+          console.log("se esta ejecutando el: "+task.nombre)
           const execPromise = util.promisify(childProcess.exec);
           execPromise(task.comando).then(() => {
             console.log(new Date().toString() + " - finalizo " + task.scriptPath);
